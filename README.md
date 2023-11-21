@@ -1,23 +1,23 @@
 # Project Name
- Rexavllp - shoping cart
+ REXAVLLP - Shoping cart
 
  ## Table of Contents
 
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Mongo Db First time setup](#mongo-db-first-time-setup)
-- [API Documentation](#api-documentation)
 
 
 ## Installation
+```bash
 git clone <repository_url>
 cd project-directory
 npm install
-
+```
 ## Usage
 
 * Entry file - app.js
-* Run command - npm start
- 
-
+* Run command - 
+ ```bash
+npm start
+```
