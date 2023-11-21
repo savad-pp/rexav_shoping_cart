@@ -1,0 +1,46 @@
+{
+  "name": "rexav_shoping_cart",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint": "eslint --fix .",
+    "prestart": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
+    "start": "nodemon ./bin/www",
+    "dev": "NODE_ENV=development exec nodemon ./bin/www",
+    "migrate": "npx sequelize-cli db:migrate",
+    "seed": "npx sequelize-cli db:seed:all"
+  },
+  "dependencies": {
+    "app-root-path": "3.1.0",
+    "axios": "1.2.2",
+    "bcrypt": "5.1.0",
+    "compression": "1.7.4",
+    "cors": "2.8.5",
+    "dotenv": "16.0.3",
+    "express": "4.18.2",
+    "express-fileupload": "1.4.0",
+    "helmet": "6.0.1",
+    "joi": "17.7.0",
+    "jsonwebtoken": "9.0.0",
+    "morgan": "1.10.0",
+    "nodemailer": "6.9.0",
+    "passport": "0.6.0",
+    "passport-local": "1.0.0",
+    "pg": "8.8.0",
+    "pino": "8.8.0",
+    "pino-pretty": "9.1.1",
+    "rate-limiter-flexible": "2.4.1",
+    "redis": "4.5.1",
+    "sequelize": "6.28.0"
+  },
+  "devDependencies": {
+    "eslint": "8.31.0",
+    "eslint-config-prettier": "8.6.0",
+    "nodemon": "2.0.20",
+    "prettier": "2.8.2",
+    "sequelize-cli": "6.5.2"
+  }
+}
